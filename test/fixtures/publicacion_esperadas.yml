@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titulo_publicacion: MyString
+  revista_publicacion: MyString
+  conferencia_sometera: MyString
+  fecha_esperada: 2016-08-17
+
+two:
+  titulo_publicacion: MyString
+  revista_publicacion: MyString
+  conferencia_sometera: MyString
+  fecha_esperada: 2016-08-17

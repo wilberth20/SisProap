@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Datos Personales</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Facultad</th>
+      <th>Departamento</th>
+      <th>Programa</th>
+      <th>Telefono</th>
+      <th>Celular</th>
+      <th>Email</th>
+      <th>Formacion academica</th>
+      <th>Experiencia</th>
+      <th>Curriculum</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @datos_personales.each do |datos_personale| %>
+      <tr>
+        <td><%= datos_personale.nombre %></td>
+        <td><%= datos_personale.apellido %></td>
+        <td><%= datos_personale.facultad %></td>
+        <td><%= datos_personale.departamento %></td>
+        <td><%= datos_personale.programa %></td>
+        <td><%= datos_personale.telefono %></td>
+        <td><%= datos_personale.celular %></td>
+        <td><%= datos_personale.email %></td>
+        <td><%= datos_personale.formacion_academica %></td>
+        <td><%= datos_personale.experiencia %></td>
+        <td><%= datos_personale.curriculum %></td>
+        <td><%= link_to 'Show', datos_personale %></td>
+        <td><%= link_to 'Edit', edit_datos_personale_path(datos_personale) %></td>
+        <td><%= link_to 'Destroy', datos_personale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Datos personale', new_datos_personale_path %>

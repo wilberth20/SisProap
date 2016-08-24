@@ -1,0 +1,1 @@
+json.array! @publicacion_esperadas, partial: 'publicacion_esperadas/publicacion_esperada', as: :publicacion_esperada

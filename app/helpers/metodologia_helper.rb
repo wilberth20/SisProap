@@ -1,0 +1,2 @@
+module MetodologiaHelper
+end

@@ -1,0 +1,1 @@
+json.partial! "publicacion_esperadas/publicacion_esperada", publicacion_esperada: @publicacion_esperada

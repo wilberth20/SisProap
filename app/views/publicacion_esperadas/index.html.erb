@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Publicacion Esperadas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Titulo publicacion</th>
+      <th>Revista publicacion</th>
+      <th>Conferencia sometera</th>
+      <th>Fecha esperada</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @publicacion_esperadas.each do |publicacion_esperada| %>
+      <tr>
+        <td><%= publicacion_esperada.titulo_publicacion %></td>
+        <td><%= publicacion_esperada.revista_publicacion %></td>
+        <td><%= publicacion_esperada.conferencia_sometera %></td>
+        <td><%= publicacion_esperada.fecha_esperada %></td>
+        <td><%= link_to 'Show', publicacion_esperada %></td>
+        <td><%= link_to 'Edit', edit_publicacion_esperada_path(publicacion_esperada) %></td>
+        <td><%= link_to 'Destroy', publicacion_esperada, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Publicacion esperada', new_publicacion_esperada_path %>

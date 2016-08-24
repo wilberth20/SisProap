@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Cronogramas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Numero</th>
+      <th>Actividad relevante</th>
+      <th>Fecha inicial</th>
+      <th>Fecha final</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cronogramas.each do |cronograma| %>
+      <tr>
+        <td><%= cronograma.numero %></td>
+        <td><%= cronograma.actividad_relevante %></td>
+        <td><%= cronograma.fecha_inicial %></td>
+        <td><%= cronograma.fecha_final %></td>
+        <td><%= link_to 'Show', cronograma %></td>
+        <td><%= link_to 'Edit', edit_cronograma_path(cronograma) %></td>
+        <td><%= link_to 'Destroy', cronograma, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cronograma', new_cronograma_path %>

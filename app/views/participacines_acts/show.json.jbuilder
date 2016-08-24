@@ -1,0 +1,1 @@
+json.partial! "participacines_acts/participacines_act", participacines_act: @participacines_act

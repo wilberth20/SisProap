@@ -1,0 +1,45 @@
+<%= form_for(@presupuesto) do |f| %>
+  <% if @presupuesto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@presupuesto.errors.count, "error") %> prohibited this presupuesto from being saved:</h2>
+
+      <ul>
+      <% @presupuesto.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :item %><br>
+    <%= f.number_field :item %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcion %><br>
+    <%= f.text_field :descripcion %>
+  </div>
+  <div class="field">
+    <%= f.label :unidad %><br>
+    <%= f.text_field :unidad %>
+  </div>
+  <div class="field">
+    <%= f.label :cantidad %><br>
+    <%= f.number_field :cantidad %>
+  </div>
+  <div class="field">
+    <%= f.label :costo_unitario %><br>
+    <%= f.text_field :costo_unitario %>
+  </div>
+  <div class="field">
+    <%= f.label :costo_total %><br>
+    <%= f.text_field :costo_total %>
+  </div>
+  <div class="field">
+    <%= f.label :costo_global %><br>
+    <%= f.text_field :costo_global %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

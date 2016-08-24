@@ -1,0 +1,1 @@
+json.array! @participacines_acts, partial: 'participacines_acts/participacines_act', as: :participacines_act

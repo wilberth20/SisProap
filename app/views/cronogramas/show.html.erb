@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Numero:</strong>
+  <%= @cronograma.numero %>
+</p>
+
+<p>
+  <strong>Actividad relevante:</strong>
+  <%= @cronograma.actividad_relevante %>
+</p>
+
+<p>
+  <strong>Fecha inicial:</strong>
+  <%= @cronograma.fecha_inicial %>
+</p>
+
+<p>
+  <strong>Fecha final:</strong>
+  <%= @cronograma.fecha_final %>
+</p>
+
+<%= link_to 'Edit', edit_cronograma_path(@cronograma) %> |
+<%= link_to 'Back', cronogramas_path %>

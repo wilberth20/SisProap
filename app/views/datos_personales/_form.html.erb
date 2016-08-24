@@ -1,0 +1,61 @@
+<%= form_for(@datos_personale) do |f| %>
+  <% if @datos_personale.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@datos_personale.errors.count, "error") %> prohibited this datos_personale from being saved:</h2>
+
+      <ul>
+      <% @datos_personale.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :apellido %><br>
+    <%= f.text_field :apellido %>
+  </div>
+  <div class="field">
+    <%= f.label :facultad %><br>
+    <%= f.text_field :facultad %>
+  </div>
+  <div class="field">
+    <%= f.label :departamento %><br>
+    <%= f.text_field :departamento %>
+  </div>
+  <div class="field">
+    <%= f.label :programa %><br>
+    <%= f.text_field :programa %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono %><br>
+    <%= f.number_field :telefono %>
+  </div>
+  <div class="field">
+    <%= f.label :celular %><br>
+    <%= f.number_field :celular %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :formacion_academica %><br>
+    <%= f.text_field :formacion_academica %>
+  </div>
+  <div class="field">
+    <%= f.label :experiencia %><br>
+    <%= f.text_field :experiencia %>
+  </div>
+  <div class="field">
+    <%= f.label :curriculum %><br>
+    <%= f.text_field :curriculum %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

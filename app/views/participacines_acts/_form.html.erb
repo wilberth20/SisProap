@@ -1,0 +1,41 @@
+<%= form_for(@participacines_act) do |f| %>
+  <% if @participacines_act.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@participacines_act.errors.count, "error") %> prohibited this participacines_act from being saved:</h2>
+
+      <ul>
+      <% @participacines_act.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :numero %><br>
+    <%= f.number_field :numero %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre_act %><br>
+    <%= f.text_field :nombre_act %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo_act %><br>
+    <%= f.text_field :tipo_act %>
+  </div>
+  <div class="field">
+    <%= f.label :inst_naci_internaci %><br>
+    <%= f.text_field :inst_naci_internaci %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha %><br>
+    <%= f.date_select :fecha %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo_planific_planificada %><br>
+    <%= f.text_field :tipo_planific_planificada %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

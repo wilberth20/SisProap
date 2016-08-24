@@ -1,0 +1,1 @@
+json.partial! "identificacion_proyectos/identificacion_proyecto", identificacion_proyecto: @identificacion_proyecto

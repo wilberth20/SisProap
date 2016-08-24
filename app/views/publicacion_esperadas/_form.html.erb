@@ -1,0 +1,33 @@
+<%= form_for(@publicacion_esperada) do |f| %>
+  <% if @publicacion_esperada.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@publicacion_esperada.errors.count, "error") %> prohibited this publicacion_esperada from being saved:</h2>
+
+      <ul>
+      <% @publicacion_esperada.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :titulo_publicacion %><br>
+    <%= f.text_field :titulo_publicacion %>
+  </div>
+  <div class="field">
+    <%= f.label :revista_publicacion %><br>
+    <%= f.text_field :revista_publicacion %>
+  </div>
+  <div class="field">
+    <%= f.label :conferencia_sometera %><br>
+    <%= f.text_field :conferencia_sometera %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_esperada %><br>
+    <%= f.date_select :fecha_esperada %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+json.extract! participacines_act, :id, :numero, :nombre_act, :tipo_act, :inst_naci_internaci, :fecha, :tipo_planific_planificada, :created_at, :updated_at
+json.url participacines_act_url(participacines_act, format: :json)

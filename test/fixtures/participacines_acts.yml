@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numero: 1
+  nombre_act: MyString
+  tipo_act: MyString
+  inst_naci_internaci: MyString
+  fecha: 2016-08-17
+  tipo_planific_planificada: MyString
+
+two:
+  numero: 1
+  nombre_act: MyString
+  tipo_act: MyString
+  inst_naci_internaci: MyString
+  fecha: 2016-08-17
+  tipo_planific_planificada: MyString

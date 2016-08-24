@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Objetivos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Objetivo general</th>
+      <th>Objetivo especifico</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @objetivos.each do |objetivo| %>
+      <tr>
+        <td><%= objetivo.objetivo_general %></td>
+        <td><%= objetivo.objetivo_especifico %></td>
+        <td><%= link_to 'Show', objetivo %></td>
+        <td><%= link_to 'Edit', edit_objetivo_path(objetivo) %></td>
+        <td><%= link_to 'Destroy', objetivo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Objetivo', new_objetivo_path %>

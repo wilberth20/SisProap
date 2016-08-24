@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Item:</strong>
+  <%= @presupuesto.item %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @presupuesto.descripcion %>
+</p>
+
+<p>
+  <strong>Unidad:</strong>
+  <%= @presupuesto.unidad %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @presupuesto.cantidad %>
+</p>
+
+<p>
+  <strong>Costo unitario:</strong>
+  <%= @presupuesto.costo_unitario %>
+</p>
+
+<p>
+  <strong>Costo total:</strong>
+  <%= @presupuesto.costo_total %>
+</p>
+
+<p>
+  <strong>Costo global:</strong>
+  <%= @presupuesto.costo_global %>
+</p>
+
+<%= link_to 'Edit', edit_presupuesto_path(@presupuesto) %> |
+<%= link_to 'Back', presupuestos_path %>

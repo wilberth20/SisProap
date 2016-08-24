@@ -1,0 +1,1 @@
+json.array! @datos_personales, partial: 'datos_personales/datos_personale', as: :datos_personale

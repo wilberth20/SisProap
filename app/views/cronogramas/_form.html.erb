@@ -1,0 +1,33 @@
+<%= form_for(@cronograma) do |f| %>
+  <% if @cronograma.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cronograma.errors.count, "error") %> prohibited this cronograma from being saved:</h2>
+
+      <ul>
+      <% @cronograma.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :numero %><br>
+    <%= f.number_field :numero %>
+  </div>
+  <div class="field">
+    <%= f.label :actividad_relevante %><br>
+    <%= f.text_field :actividad_relevante %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_inicial %><br>
+    <%= f.date_select :fecha_inicial %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_final %><br>
+    <%= f.date_select :fecha_final %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

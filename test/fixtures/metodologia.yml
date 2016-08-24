@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tipo_estudio: MyString
+  proc_tratamiento: MyString
+  proc_esteticos: MyString
+
+two:
+  tipo_estudio: MyString
+  proc_tratamiento: MyString
+  proc_esteticos: MyString

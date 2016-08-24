@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo publicacion:</strong>
+  <%= @publicacion_esperada.titulo_publicacion %>
+</p>
+
+<p>
+  <strong>Revista publicacion:</strong>
+  <%= @publicacion_esperada.revista_publicacion %>
+</p>
+
+<p>
+  <strong>Conferencia sometera:</strong>
+  <%= @publicacion_esperada.conferencia_sometera %>
+</p>
+
+<p>
+  <strong>Fecha esperada:</strong>
+  <%= @publicacion_esperada.fecha_esperada %>
+</p>
+
+<%= link_to 'Edit', edit_publicacion_esperada_path(@publicacion_esperada) %> |
+<%= link_to 'Back', publicacion_esperadas_path %>

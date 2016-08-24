@@ -1,0 +1,29 @@
+<%= form_for(@metodologium) do |f| %>
+  <% if @metodologium.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@metodologium.errors.count, "error") %> prohibited this metodologium from being saved:</h2>
+
+      <ul>
+      <% @metodologium.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tipo_estudio %><br>
+    <%= f.text_field :tipo_estudio %>
+  </div>
+  <div class="field">
+    <%= f.label :proc_tratamiento %><br>
+    <%= f.text_field :proc_tratamiento %>
+  </div>
+  <div class="field">
+    <%= f.label :proc_esteticos %><br>
+    <%= f.text_field :proc_esteticos %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

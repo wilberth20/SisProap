@@ -1,0 +1,1 @@
+json.partial! "datos_personales/datos_personale", datos_personale: @datos_personale

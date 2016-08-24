@@ -1,0 +1,1 @@
+json.partial! "metodologia/metodologium", metodologium: @metodologium

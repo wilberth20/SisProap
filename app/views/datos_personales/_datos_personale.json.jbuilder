@@ -1,0 +1,2 @@
+json.extract! datos_personale, :id, :nombre, :apellido, :facultad, :departamento, :programa, :telefono, :celular, :email, :formacion_academica, :experiencia, :curriculum, :created_at, :updated_at
+json.url datos_personale_url(datos_personale, format: :json)
