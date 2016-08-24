@@ -11,3 +11,7 @@
 /log/*
 !/log/.keep
 /tmp
+
+#ignore all database files of proyect
+
+/config/.yml
