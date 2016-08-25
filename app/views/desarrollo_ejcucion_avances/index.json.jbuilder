@@ -1,0 +1,1 @@
+json.array! @desarrollo_ejcucion_avances, partial: 'desarrollo_ejcucion_avances/desarrollo_ejcucion_avance', as: :desarrollo_ejcucion_avance

@@ -1,0 +1,1 @@
+json.array! @publicaciones_planeadas_avances, partial: 'publicaciones_planeadas_avances/publicaciones_planeadas_avance', as: :publicaciones_planeadas_avance

@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  resources :ciencia_tecnologia_avances
+  resources :desarrollo_ejcucion_avances
+  resources :publicaciones_planeadas_avances
+  resources :monitoreo_beneficio_avances
+  resources :monitoreo_viculodocente_avances
+  resources :control_entrega_avances
+  resources :monitoreo_riesgos_avances
+  resources :monitoreo_talentoh_avances
+  resources :participantes_proyecto_avances
+  resources :datos_generales_avances
   resources :participacines_acts
   resources :presupuestos
   resources :presupuestos
@@ -13,6 +23,8 @@ Rails.application.routes.draw do
   resources :objetivos
   resources :participaciones_acts
   resources :presupuestos
+  
+  
   resources :categoria
 
 
@@ -20,7 +32,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'welcome#index'
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

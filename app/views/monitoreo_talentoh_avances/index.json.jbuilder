@@ -1,0 +1,1 @@
+json.array! @monitoreo_talentoh_avances, partial: 'monitoreo_talentoh_avances/monitoreo_talentoh_avance', as: :monitoreo_talentoh_avance

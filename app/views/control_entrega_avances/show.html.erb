@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Numero informe:</strong>
+  <%= @control_entrega_avance.numero_informe %>
+</p>
+
+<p>
+  <strong>Fecha limite:</strong>
+  <%= @control_entrega_avance.fecha_limite %>
+</p>
+
+<p>
+  <strong>Fecha entrega:</strong>
+  <%= @control_entrega_avance.fecha_entrega %>
+</p>
+
+<%= link_to 'Edit', edit_control_entrega_avance_path(@control_entrega_avance) %> |
+<%= link_to 'Back', control_entrega_avances_path %>

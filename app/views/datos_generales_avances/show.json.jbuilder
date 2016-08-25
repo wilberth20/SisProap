@@ -1,0 +1,1 @@
+json.partial! "datos_generales_avances/datos_generales_avance", datos_generales_avance: @datos_generales_avance

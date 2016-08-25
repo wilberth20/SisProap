@@ -1,0 +1,49 @@
+<%= form_for(@participantes_proyecto_avance) do |f| %>
+  <% if @participantes_proyecto_avance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@participantes_proyecto_avance.errors.count, "error") %> prohibited this participantes_proyecto_avance from being saved:</h2>
+
+      <ul>
+      <% @participantes_proyecto_avance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre_parti %><br>
+    <%= f.text_field :nombre_parti %>
+  </div>
+  <div class="field">
+    <%= f.label :apellido_parti %><br>
+    <%= f.text_field :apellido_parti %>
+  </div>
+  <div class="field">
+    <%= f.label :facultad %><br>
+    <%= f.text_field :facultad %>
+  </div>
+  <div class="field">
+    <%= f.label :cargo %><br>
+    <%= f.text_field :cargo %>
+  </div>
+  <div class="field">
+    <%= f.label :funciones_responsabilidades %><br>
+    <%= f.text_field :funciones_responsabilidades %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono %><br>
+    <%= f.text_field :telefono %>
+  </div>
+  <div class="field">
+    <%= f.label :correo %><br>
+    <%= f.text_field :correo %>
+  </div>
+  <div class="field">
+    <%= f.label :resum_resultados %><br>
+    <%= f.text_field :resum_resultados %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

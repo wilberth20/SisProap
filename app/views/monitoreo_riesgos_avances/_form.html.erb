@@ -1,0 +1,37 @@
+<%= form_for(@monitoreo_riesgos_avance) do |f| %>
+  <% if @monitoreo_riesgos_avance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@monitoreo_riesgos_avance.errors.count, "error") %> prohibited this monitoreo_riesgos_avance from being saved:</h2>
+
+      <ul>
+      <% @monitoreo_riesgos_avance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :desc_riegos %><br>
+    <%= f.text_field :desc_riegos %>
+  </div>
+  <div class="field">
+    <%= f.label :probab_ocurrencia %><br>
+    <%= f.text_field :probab_ocurrencia %>
+  </div>
+  <div class="field">
+    <%= f.label :acciones_mitigacion %><br>
+    <%= f.text_field :acciones_mitigacion %>
+  </div>
+  <div class="field">
+    <%= f.label :observaciones_adicionales %><br>
+    <%= f.text_field :observaciones_adicionales %>
+  </div>
+  <div class="field">
+    <%= f.label :informe_financiero %><br>
+    <%= f.text_field :informe_financiero %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

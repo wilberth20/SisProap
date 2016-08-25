@@ -1,0 +1,1 @@
+json.partial! "monitoreo_talentoh_avances/monitoreo_talentoh_avance", monitoreo_talentoh_avance: @monitoreo_talentoh_avance

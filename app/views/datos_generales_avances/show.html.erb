@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre inv:</strong>
+  <%= @datos_generales_avance.nombre_inv %>
+</p>
+
+<p>
+  <strong>Apellido inv:</strong>
+  <%= @datos_generales_avance.apellido_inv %>
+</p>
+
+<p>
+  <strong>Categoria:</strong>
+  <%= @datos_generales_avance.categoria %>
+</p>
+
+<p>
+  <strong>Nombre proyecto:</strong>
+  <%= @datos_generales_avance.nombre_proyecto %>
+</p>
+
+<p>
+  <strong>Area investigacion:</strong>
+  <%= @datos_generales_avance.area_investigacion %>
+</p>
+
+<p>
+  <strong>Linea investigacion:</strong>
+  <%= @datos_generales_avance.linea_investigacion %>
+</p>
+
+<p>
+  <strong>Fecha inicio:</strong>
+  <%= @datos_generales_avance.fecha_inicio %>
+</p>
+
+<p>
+  <strong>Fecha fin:</strong>
+  <%= @datos_generales_avance.fecha_fin %>
+</p>
+
+<p>
+  <strong>Facultad:</strong>
+  <%= @datos_generales_avance.facultad %>
+</p>
+
+<%= link_to 'Edit', edit_datos_generales_avance_path(@datos_generales_avance) %> |
+<%= link_to 'Back', datos_generales_avances_path %>

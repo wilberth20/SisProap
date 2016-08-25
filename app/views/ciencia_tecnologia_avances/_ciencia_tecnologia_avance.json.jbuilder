@@ -1,0 +1,2 @@
+json.extract! ciencia_tecnologia_avance, :id, :nombre_act, :participantes, :tipo_act, :inst_nac_internac, :tipo_partiplanif, :fecha, :informe_avance, :created_at, :updated_at
+json.url ciencia_tecnologia_avance_url(ciencia_tecnologia_avance, format: :json)

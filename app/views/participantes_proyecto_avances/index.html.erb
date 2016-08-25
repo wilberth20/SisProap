@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Participantes Proyecto Avances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre parti</th>
+      <th>Apellido parti</th>
+      <th>Facultad</th>
+      <th>Cargo</th>
+      <th>Funciones responsabilidades</th>
+      <th>Telefono</th>
+      <th>Correo</th>
+      <th>Resum resultados</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @participantes_proyecto_avances.each do |participantes_proyecto_avance| %>
+      <tr>
+        <td><%= participantes_proyecto_avance.nombre_parti %></td>
+        <td><%= participantes_proyecto_avance.apellido_parti %></td>
+        <td><%= participantes_proyecto_avance.facultad %></td>
+        <td><%= participantes_proyecto_avance.cargo %></td>
+        <td><%= participantes_proyecto_avance.funciones_responsabilidades %></td>
+        <td><%= participantes_proyecto_avance.telefono %></td>
+        <td><%= participantes_proyecto_avance.correo %></td>
+        <td><%= participantes_proyecto_avance.resum_resultados %></td>
+        <td><%= link_to 'Show', participantes_proyecto_avance %></td>
+        <td><%= link_to 'Edit', edit_participantes_proyecto_avance_path(participantes_proyecto_avance) %></td>
+        <td><%= link_to 'Destroy', participantes_proyecto_avance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Participantes proyecto avance', new_participantes_proyecto_avance_path %>

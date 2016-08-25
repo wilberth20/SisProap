@@ -1,0 +1,29 @@
+<%= form_for(@control_entrega_avance) do |f| %>
+  <% if @control_entrega_avance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@control_entrega_avance.errors.count, "error") %> prohibited this control_entrega_avance from being saved:</h2>
+
+      <ul>
+      <% @control_entrega_avance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :numero_informe %><br>
+    <%= f.number_field :numero_informe %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_limite %><br>
+    <%= f.date_select :fecha_limite %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_entrega %><br>
+    <%= f.date_select :fecha_entrega %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

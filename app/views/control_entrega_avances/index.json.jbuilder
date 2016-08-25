@@ -1,0 +1,1 @@
+json.array! @control_entrega_avances, partial: 'control_entrega_avances/control_entrega_avance', as: :control_entrega_avance

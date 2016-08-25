@@ -1,0 +1,1 @@
+json.partial! "ciencia_tecnologia_avances/ciencia_tecnologia_avance", ciencia_tecnologia_avance: @ciencia_tecnologia_avance

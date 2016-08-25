@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Control Entrega Avances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Numero informe</th>
+      <th>Fecha limite</th>
+      <th>Fecha entrega</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @control_entrega_avances.each do |control_entrega_avance| %>
+      <tr>
+        <td><%= control_entrega_avance.numero_informe %></td>
+        <td><%= control_entrega_avance.fecha_limite %></td>
+        <td><%= control_entrega_avance.fecha_entrega %></td>
+        <td><%= link_to 'Show', control_entrega_avance %></td>
+        <td><%= link_to 'Edit', edit_control_entrega_avance_path(control_entrega_avance) %></td>
+        <td><%= link_to 'Destroy', control_entrega_avance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Control entrega avance', new_control_entrega_avance_path %>

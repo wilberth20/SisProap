@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Desc riegos:</strong>
+  <%= @monitoreo_riesgos_avance.desc_riegos %>
+</p>
+
+<p>
+  <strong>Probab ocurrencia:</strong>
+  <%= @monitoreo_riesgos_avance.probab_ocurrencia %>
+</p>
+
+<p>
+  <strong>Acciones mitigacion:</strong>
+  <%= @monitoreo_riesgos_avance.acciones_mitigacion %>
+</p>
+
+<p>
+  <strong>Observaciones adicionales:</strong>
+  <%= @monitoreo_riesgos_avance.observaciones_adicionales %>
+</p>
+
+<p>
+  <strong>Informe financiero:</strong>
+  <%= @monitoreo_riesgos_avance.informe_financiero %>
+</p>
+
+<%= link_to 'Edit', edit_monitoreo_riesgos_avance_path(@monitoreo_riesgos_avance) %> |
+<%= link_to 'Back', monitoreo_riesgos_avances_path %>

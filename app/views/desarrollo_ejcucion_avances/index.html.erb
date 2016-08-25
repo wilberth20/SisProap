@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Desarrollo Ejcucion Avances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Obj especifico</th>
+      <th>Resultados</th>
+      <th>Actv desarrolladas</th>
+      <th>Fecha estiamda</th>
+      <th>Fecha real</th>
+      <th>Estado avance</th>
+      <th>Dific resolver</th>
+      <th>Actv pendientes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @desarrollo_ejcucion_avances.each do |desarrollo_ejcucion_avance| %>
+      <tr>
+        <td><%= desarrollo_ejcucion_avance.obj_especifico %></td>
+        <td><%= desarrollo_ejcucion_avance.resultados %></td>
+        <td><%= desarrollo_ejcucion_avance.actv_desarrolladas %></td>
+        <td><%= desarrollo_ejcucion_avance.fecha_estiamda %></td>
+        <td><%= desarrollo_ejcucion_avance.fecha_real %></td>
+        <td><%= desarrollo_ejcucion_avance.estado_avance %></td>
+        <td><%= desarrollo_ejcucion_avance.dific_resolver %></td>
+        <td><%= desarrollo_ejcucion_avance.actv_pendientes %></td>
+        <td><%= link_to 'Show', desarrollo_ejcucion_avance %></td>
+        <td><%= link_to 'Edit', edit_desarrollo_ejcucion_avance_path(desarrollo_ejcucion_avance) %></td>
+        <td><%= link_to 'Destroy', desarrollo_ejcucion_avance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Desarrollo ejcucion avance', new_desarrollo_ejcucion_avance_path %>

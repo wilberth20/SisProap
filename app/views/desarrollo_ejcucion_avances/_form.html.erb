@@ -1,0 +1,49 @@
+<%= form_for(@desarrollo_ejcucion_avance) do |f| %>
+  <% if @desarrollo_ejcucion_avance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@desarrollo_ejcucion_avance.errors.count, "error") %> prohibited this desarrollo_ejcucion_avance from being saved:</h2>
+
+      <ul>
+      <% @desarrollo_ejcucion_avance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :obj_especifico %><br>
+    <%= f.text_field :obj_especifico %>
+  </div>
+  <div class="field">
+    <%= f.label :resultados %><br>
+    <%= f.text_field :resultados %>
+  </div>
+  <div class="field">
+    <%= f.label :actv_desarrolladas %><br>
+    <%= f.text_field :actv_desarrolladas %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_estiamda %><br>
+    <%= f.date_select :fecha_estiamda %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_real %><br>
+    <%= f.date_select :fecha_real %>
+  </div>
+  <div class="field">
+    <%= f.label :estado_avance %><br>
+    <%= f.text_field :estado_avance %>
+  </div>
+  <div class="field">
+    <%= f.label :dific_resolver %><br>
+    <%= f.text_field :dific_resolver %>
+  </div>
+  <div class="field">
+    <%= f.label :actv_pendientes %><br>
+    <%= f.text_field :actv_pendientes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

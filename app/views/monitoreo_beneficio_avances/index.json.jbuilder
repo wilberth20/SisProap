@@ -1,0 +1,1 @@
+json.array! @monitoreo_beneficio_avances, partial: 'monitoreo_beneficio_avances/monitoreo_beneficio_avance', as: :monitoreo_beneficio_avance

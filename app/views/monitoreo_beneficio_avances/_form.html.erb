@@ -1,0 +1,41 @@
+<%= form_for(@monitoreo_beneficio_avance) do |f| %>
+  <% if @monitoreo_beneficio_avance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@monitoreo_beneficio_avance.errors.count, "error") %> prohibited this monitoreo_beneficio_avance from being saved:</h2>
+
+      <ul>
+      <% @monitoreo_beneficio_avance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre_contacto %><br>
+    <%= f.text_field :nombre_contacto %>
+  </div>
+  <div class="field">
+    <%= f.label :apellido_contacto %><br>
+    <%= f.text_field :apellido_contacto %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre_organizacion %><br>
+    <%= f.text_field :nombre_organizacion %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo_colaboracion %><br>
+    <%= f.text_field :tipo_colaboracion %>
+  </div>
+  <div class="field">
+    <%= f.label :compromiso_organizacion %><br>
+    <%= f.text_field :compromiso_organizacion %>
+  </div>
+  <div class="field">
+    <%= f.label :actv_realizadas %><br>
+    <%= f.text_field :actv_realizadas %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

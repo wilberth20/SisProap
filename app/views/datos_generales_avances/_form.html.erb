@@ -1,0 +1,53 @@
+<%= form_for(@datos_generales_avance) do |f| %>
+  <% if @datos_generales_avance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@datos_generales_avance.errors.count, "error") %> prohibited this datos_generales_avance from being saved:</h2>
+
+      <ul>
+      <% @datos_generales_avance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre_inv %><br>
+    <%= f.text_field :nombre_inv %>
+  </div>
+  <div class="field">
+    <%= f.label :apellido_inv %><br>
+    <%= f.text_field :apellido_inv %>
+  </div>
+  <div class="field">
+    <%= f.label :categoria %><br>
+    <%= f.text_field :categoria %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre_proyecto %><br>
+    <%= f.text_field :nombre_proyecto %>
+  </div>
+  <div class="field">
+    <%= f.label :area_investigacion %><br>
+    <%= f.text_field :area_investigacion %>
+  </div>
+  <div class="field">
+    <%= f.label :linea_investigacion %><br>
+    <%= f.text_field :linea_investigacion %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_inicio %><br>
+    <%= f.date_select :fecha_inicio %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_fin %><br>
+    <%= f.date_select :fecha_fin %>
+  </div>
+  <div class="field">
+    <%= f.label :facultad %><br>
+    <%= f.text_field :facultad %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  desc_riegos: MyString
+  probab_ocurrencia: MyString
+  acciones_mitigacion: MyString
+  observaciones_adicionales: MyString
+  informe_financiero: MyString
+
+two:
+  desc_riegos: MyString
+  probab_ocurrencia: MyString
+  acciones_mitigacion: MyString
+  observaciones_adicionales: MyString
+  informe_financiero: MyString

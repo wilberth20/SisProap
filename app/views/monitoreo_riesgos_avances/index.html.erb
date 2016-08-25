@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Monitoreo Riesgos Avances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Desc riegos</th>
+      <th>Probab ocurrencia</th>
+      <th>Acciones mitigacion</th>
+      <th>Observaciones adicionales</th>
+      <th>Informe financiero</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @monitoreo_riesgos_avances.each do |monitoreo_riesgos_avance| %>
+      <tr>
+        <td><%= monitoreo_riesgos_avance.desc_riegos %></td>
+        <td><%= monitoreo_riesgos_avance.probab_ocurrencia %></td>
+        <td><%= monitoreo_riesgos_avance.acciones_mitigacion %></td>
+        <td><%= monitoreo_riesgos_avance.observaciones_adicionales %></td>
+        <td><%= monitoreo_riesgos_avance.informe_financiero %></td>
+        <td><%= link_to 'Show', monitoreo_riesgos_avance %></td>
+        <td><%= link_to 'Edit', edit_monitoreo_riesgos_avance_path(monitoreo_riesgos_avance) %></td>
+        <td><%= link_to 'Destroy', monitoreo_riesgos_avance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Monitoreo riesgos avance', new_monitoreo_riesgos_avance_path %>

@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Monitoreo Beneficio Avances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre contacto</th>
+      <th>Apellido contacto</th>
+      <th>Nombre organizacion</th>
+      <th>Tipo colaboracion</th>
+      <th>Compromiso organizacion</th>
+      <th>Actv realizadas</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @monitoreo_beneficio_avances.each do |monitoreo_beneficio_avance| %>
+      <tr>
+        <td><%= monitoreo_beneficio_avance.nombre_contacto %></td>
+        <td><%= monitoreo_beneficio_avance.apellido_contacto %></td>
+        <td><%= monitoreo_beneficio_avance.nombre_organizacion %></td>
+        <td><%= monitoreo_beneficio_avance.tipo_colaboracion %></td>
+        <td><%= monitoreo_beneficio_avance.compromiso_organizacion %></td>
+        <td><%= monitoreo_beneficio_avance.actv_realizadas %></td>
+        <td><%= link_to 'Show', monitoreo_beneficio_avance %></td>
+        <td><%= link_to 'Edit', edit_monitoreo_beneficio_avance_path(monitoreo_beneficio_avance) %></td>
+        <td><%= link_to 'Destroy', monitoreo_beneficio_avance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Monitoreo beneficio avance', new_monitoreo_beneficio_avance_path %>

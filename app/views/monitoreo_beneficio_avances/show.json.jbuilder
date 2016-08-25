@@ -1,0 +1,1 @@
+json.partial! "monitoreo_beneficio_avances/monitoreo_beneficio_avance", monitoreo_beneficio_avance: @monitoreo_beneficio_avance

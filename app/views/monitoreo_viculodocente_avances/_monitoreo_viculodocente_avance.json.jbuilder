@@ -1,0 +1,2 @@
+json.extract! monitoreo_viculodocente_avance, :id, :nombre_curso, :nivel_curso, :facultad, :semestre, :created_at, :updated_at
+json.url monitoreo_viculodocente_avance_url(monitoreo_viculodocente_avance, format: :json)

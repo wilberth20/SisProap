@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Datos Generales Avances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre inv</th>
+      <th>Apellido inv</th>
+      <th>Categoria</th>
+      <th>Nombre proyecto</th>
+      <th>Area investigacion</th>
+      <th>Linea investigacion</th>
+      <th>Fecha inicio</th>
+      <th>Fecha fin</th>
+      <th>Facultad</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @datos_generales_avances.each do |datos_generales_avance| %>
+      <tr>
+        <td><%= datos_generales_avance.nombre_inv %></td>
+        <td><%= datos_generales_avance.apellido_inv %></td>
+        <td><%= datos_generales_avance.categoria %></td>
+        <td><%= datos_generales_avance.nombre_proyecto %></td>
+        <td><%= datos_generales_avance.area_investigacion %></td>
+        <td><%= datos_generales_avance.linea_investigacion %></td>
+        <td><%= datos_generales_avance.fecha_inicio %></td>
+        <td><%= datos_generales_avance.fecha_fin %></td>
+        <td><%= datos_generales_avance.facultad %></td>
+        <td><%= link_to 'Show', datos_generales_avance %></td>
+        <td><%= link_to 'Edit', edit_datos_generales_avance_path(datos_generales_avance) %></td>
+        <td><%= link_to 'Destroy', datos_generales_avance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Datos generales avance', new_datos_generales_avance_path %>

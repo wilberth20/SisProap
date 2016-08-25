@@ -1,0 +1,2 @@
+json.extract! monitoreo_beneficio_avance, :id, :nombre_contacto, :apellido_contacto, :nombre_organizacion, :tipo_colaboracion, :compromiso_organizacion, :actv_realizadas, :created_at, :updated_at
+json.url monitoreo_beneficio_avance_url(monitoreo_beneficio_avance, format: :json)

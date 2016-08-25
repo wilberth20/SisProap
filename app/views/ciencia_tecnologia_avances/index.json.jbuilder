@@ -1,0 +1,1 @@
+json.array! @ciencia_tecnologia_avances, partial: 'ciencia_tecnologia_avances/ciencia_tecnologia_avance', as: :ciencia_tecnologia_avance

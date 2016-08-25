@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo preliminar:</strong>
+  <%= @publicaciones_planeadas_avance.titulo_preliminar %>
+</p>
+
+<p>
+  <strong>Revista publicacion:</strong>
+  <%= @publicaciones_planeadas_avance.revista_publicacion %>
+</p>
+
+<p>
+  <strong>Conferencia publicacion:</strong>
+  <%= @publicaciones_planeadas_avance.conferencia_publicacion %>
+</p>
+
+<p>
+  <strong>Fecha publicacion:</strong>
+  <%= @publicaciones_planeadas_avance.fecha_publicacion %>
+</p>
+
+<%= link_to 'Edit', edit_publicaciones_planeadas_avance_path(@publicaciones_planeadas_avance) %> |
+<%= link_to 'Back', publicaciones_planeadas_avances_path %>

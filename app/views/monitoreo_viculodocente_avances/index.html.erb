@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Monitoreo Viculodocente Avances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre curso</th>
+      <th>Nivel curso</th>
+      <th>Facultad</th>
+      <th>Semestre</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @monitoreo_viculodocente_avances.each do |monitoreo_viculodocente_avance| %>
+      <tr>
+        <td><%= monitoreo_viculodocente_avance.nombre_curso %></td>
+        <td><%= monitoreo_viculodocente_avance.nivel_curso %></td>
+        <td><%= monitoreo_viculodocente_avance.facultad %></td>
+        <td><%= monitoreo_viculodocente_avance.semestre %></td>
+        <td><%= link_to 'Show', monitoreo_viculodocente_avance %></td>
+        <td><%= link_to 'Edit', edit_monitoreo_viculodocente_avance_path(monitoreo_viculodocente_avance) %></td>
+        <td><%= link_to 'Destroy', monitoreo_viculodocente_avance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Monitoreo viculodocente avance', new_monitoreo_viculodocente_avance_path %>

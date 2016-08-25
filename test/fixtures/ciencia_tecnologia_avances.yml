@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre_act: MyString
+  participantes: MyString
+  tipo_act: MyString
+  inst_nac_internac: MyString
+  tipo_partiplanif: MyString
+  fecha: 2016-08-25
+  informe_avance: MyString
+
+two:
+  nombre_act: MyString
+  participantes: MyString
+  tipo_act: MyString
+  inst_nac_internac: MyString
+  tipo_partiplanif: MyString
+  fecha: 2016-08-25
+  informe_avance: MyString

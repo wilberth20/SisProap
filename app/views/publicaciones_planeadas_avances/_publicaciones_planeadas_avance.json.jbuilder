@@ -1,0 +1,2 @@
+json.extract! publicaciones_planeadas_avance, :id, :titulo_preliminar, :revista_publicacion, :conferencia_publicacion, :fecha_publicacion, :created_at, :updated_at
+json.url publicaciones_planeadas_avance_url(publicaciones_planeadas_avance, format: :json)

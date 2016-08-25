@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre_inv: MyString
+  apellido_inv: MyString
+  categoria: MyString
+  nombre_proyecto: MyString
+  area_investigacion: MyString
+  linea_investigacion: MyString
+  fecha_inicio: 2016-08-25
+  fecha_fin: 2016-08-25
+  facultad: MyString
+
+two:
+  nombre_inv: MyString
+  apellido_inv: MyString
+  categoria: MyString
+  nombre_proyecto: MyString
+  area_investigacion: MyString
+  linea_investigacion: MyString
+  fecha_inicio: 2016-08-25
+  fecha_fin: 2016-08-25
+  facultad: MyString

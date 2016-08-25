@@ -1,0 +1,33 @@
+<%= form_for(@monitoreo_viculodocente_avance) do |f| %>
+  <% if @monitoreo_viculodocente_avance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@monitoreo_viculodocente_avance.errors.count, "error") %> prohibited this monitoreo_viculodocente_avance from being saved:</h2>
+
+      <ul>
+      <% @monitoreo_viculodocente_avance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre_curso %><br>
+    <%= f.text_field :nombre_curso %>
+  </div>
+  <div class="field">
+    <%= f.label :nivel_curso %><br>
+    <%= f.text_field :nivel_curso %>
+  </div>
+  <div class="field">
+    <%= f.label :facultad %><br>
+    <%= f.text_field :facultad %>
+  </div>
+  <div class="field">
+    <%= f.label :semestre %><br>
+    <%= f.text_field :semestre %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

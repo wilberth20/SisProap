@@ -1,0 +1,1 @@
+json.partial! "publicaciones_planeadas_avances/publicaciones_planeadas_avance", publicaciones_planeadas_avance: @publicaciones_planeadas_avance

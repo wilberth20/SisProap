@@ -1,0 +1,1 @@
+json.partial! "desarrollo_ejcucion_avances/desarrollo_ejcucion_avance", desarrollo_ejcucion_avance: @desarrollo_ejcucion_avance

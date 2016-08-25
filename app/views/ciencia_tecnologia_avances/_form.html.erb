@@ -1,0 +1,45 @@
+<%= form_for(@ciencia_tecnologia_avance) do |f| %>
+  <% if @ciencia_tecnologia_avance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ciencia_tecnologia_avance.errors.count, "error") %> prohibited this ciencia_tecnologia_avance from being saved:</h2>
+
+      <ul>
+      <% @ciencia_tecnologia_avance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre_act %><br>
+    <%= f.text_field :nombre_act %>
+  </div>
+  <div class="field">
+    <%= f.label :participantes %><br>
+    <%= f.text_field :participantes %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo_act %><br>
+    <%= f.text_field :tipo_act %>
+  </div>
+  <div class="field">
+    <%= f.label :inst_nac_internac %><br>
+    <%= f.text_field :inst_nac_internac %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo_partiplanif %><br>
+    <%= f.text_field :tipo_partiplanif %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha %><br>
+    <%= f.date_select :fecha %>
+  </div>
+  <div class="field">
+    <%= f.label :informe_avance %><br>
+    <%= f.text_field :informe_avance %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

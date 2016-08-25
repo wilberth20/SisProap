@@ -1,0 +1,2 @@
+json.extract! monitoreo_riesgos_avance, :id, :desc_riegos, :probab_ocurrencia, :acciones_mitigacion, :observaciones_adicionales, :informe_financiero, :created_at, :updated_at
+json.url monitoreo_riesgos_avance_url(monitoreo_riesgos_avance, format: :json)

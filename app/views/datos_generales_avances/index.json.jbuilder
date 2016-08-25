@@ -1,0 +1,1 @@
+json.array! @datos_generales_avances, partial: 'datos_generales_avances/datos_generales_avance', as: :datos_generales_avance

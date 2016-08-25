@@ -1,0 +1,2 @@
+json.extract! datos_generales_avance, :id, :nombre_inv, :apellido_inv, :categoria, :nombre_proyecto, :area_investigacion, :linea_investigacion, :fecha_inicio, :fecha_fin, :facultad, :created_at, :updated_at
+json.url datos_generales_avance_url(datos_generales_avance, format: :json)

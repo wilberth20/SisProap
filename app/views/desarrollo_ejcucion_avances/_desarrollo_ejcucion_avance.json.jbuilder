@@ -1,0 +1,2 @@
+json.extract! desarrollo_ejcucion_avance, :id, :obj_especifico, :resultados, :actv_desarrolladas, :fecha_estiamda, :fecha_real, :estado_avance, :dific_resolver, :actv_pendientes, :created_at, :updated_at
+json.url desarrollo_ejcucion_avance_url(desarrollo_ejcucion_avance, format: :json)

@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Publicaciones Planeadas Avances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Titulo preliminar</th>
+      <th>Revista publicacion</th>
+      <th>Conferencia publicacion</th>
+      <th>Fecha publicacion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @publicaciones_planeadas_avances.each do |publicaciones_planeadas_avance| %>
+      <tr>
+        <td><%= publicaciones_planeadas_avance.titulo_preliminar %></td>
+        <td><%= publicaciones_planeadas_avance.revista_publicacion %></td>
+        <td><%= publicaciones_planeadas_avance.conferencia_publicacion %></td>
+        <td><%= publicaciones_planeadas_avance.fecha_publicacion %></td>
+        <td><%= link_to 'Show', publicaciones_planeadas_avance %></td>
+        <td><%= link_to 'Edit', edit_publicaciones_planeadas_avance_path(publicaciones_planeadas_avance) %></td>
+        <td><%= link_to 'Destroy', publicaciones_planeadas_avance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Publicaciones planeadas avance', new_publicaciones_planeadas_avance_path %>

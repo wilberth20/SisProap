@@ -1,0 +1,1 @@
+json.array! @monitoreo_viculodocente_avances, partial: 'monitoreo_viculodocente_avances/monitoreo_viculodocente_avance', as: :monitoreo_viculodocente_avance

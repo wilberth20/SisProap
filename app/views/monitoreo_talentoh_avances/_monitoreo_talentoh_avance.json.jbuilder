@@ -1,0 +1,2 @@
+json.extract! monitoreo_talentoh_avance, :id, :nombre, :apellido, :nivel_academico, :titulo_trabajo, :facultad, :otra_info, :created_at, :updated_at
+json.url monitoreo_talentoh_avance_url(monitoreo_talentoh_avance, format: :json)

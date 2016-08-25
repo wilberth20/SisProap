@@ -1,0 +1,2 @@
+json.extract! participantes_proyecto_avance, :id, :nombre_parti, :apellido_parti, :facultad, :cargo, :funciones_responsabilidades, :telefono, :correo, :resum_resultados, :created_at, :updated_at
+json.url participantes_proyecto_avance_url(participantes_proyecto_avance, format: :json)
