@@ -16,12 +16,6 @@ ActiveRecord::Schema.define(version: 20160826173538) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "categoria", force: :cascade do |t|
-    t.string   "nombre_categoria"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
-  end
-
   create_table "ciencia_tecnologia_avances", force: :cascade do |t|
     t.string   "nombre_act"
     t.string   "participantes"
