@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users
+  
+  post 'signnup' => 'devise/registrations#create', :as => :custom_user_registration
   resources :ciencia_tecnologia_avances
   resources :desarrollo_ejcucion_avances
   resources :publicaciones_planeadas_avances
@@ -23,10 +26,17 @@ Rails.application.routes.draw do
   resources :objetivos
   resources :participaciones_acts
   resources :presupuestos
-  
-  
   resources :categoria
 
+  #root 'welcome#index'
+  devise_scope :user do
+  authenticated :user do
+    root :to => 'welcome#index'
+  end
+  unauthenticated :user do
+    root :to => 'devise/sessions#new', as: :unauthenticated_root
+  end
+end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
