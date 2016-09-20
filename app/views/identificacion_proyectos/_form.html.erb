@@ -1,3 +1,4 @@
+
 <%= form_for(@identificacion_proyecto) do |f| %>
   <% if @identificacion_proyecto.errors.any? %>
     <div id="error_explanation">
@@ -11,71 +12,49 @@
     </div>
   <% end %>
 
-  <div class="field">
+
+  <div class="field" style="margin-left: 50px">
     <%= f.label :titulo %><br>
     <%= f.text_field :titulo %>
   </div>
-  <div class="field">
+  <div class="field" style="margin-left: 290px; margin-top:-61px; margin-right: 250px">
     <%= f.label :fecha_inicio %><br>
     <%= f.date_select :fecha_inicio %>
   </div>
-  <div class="field">
+  <div class="field" style="margin-left: 550px;margin-top: -55px; margin-right: 0px">
     <%= f.label :fecha_fin %><br>
     <%= f.date_select :fecha_fin %>
   </div>
-  <div class="field">
+  <div class="field" style="margin-left: 50px">
     <%= f.label :duracion %><br>
     <%= f.number_field :duracion %>
   </div>
-  <div class="field">
+  <div class="field" style="margin-left: 290px; margin-top: -61px">
     <%= f.label :area_estrategica %><br>
     <%= f.text_field :area_estrategica %>
   </div>
-  <div class="field">
+  <div class="field" style="margin-left: 550px;margin-top: -61px">
     <%= f.label :linea %><br>
     <%= f.text_field :linea %>
   </div>
-  <div class="field">
+  <div class="field" style="margin-left: 50px">
     <%= f.label :resumen %><br>
     <%= f.text_field :resumen %>
   </div>
-  <div class="field">
+  <div class="field" style="margin-left: 290px; margin-top: -61px">
     <%= f.label :definicion_problema %><br>
     <%= f.text_field :definicion_problema %>
   </div>
-  <div class="field">
+  <div class="field" style="margin-left: 550px;margin-top: -61px">
     <%= f.label :justificacio %><br>
     <%= f.text_field :justificacio %>
   </div>
-  <div class="field">
+  <div class="field" style="margin-left: 50px;">
     <%= f.label :fundamento_teorico %><br>
     <%= f.text_field :fundamento_teorico %>
   </div>
-  <div class="field">
-    <%= f.label :plan_analisis %><br>
-    <%= f.text_field :plan_analisis %>
-  </div>
-  <div class="field">
-    <%= f.label :conclucion %><br>
-    <%= f.text_field :conclucion %>
-  </div>
-  <div class="field">
-    <%= f.label :plan_vinculo_docente %><br>
-    <%= f.text_field :plan_vinculo_docente %>
-  </div>
-  <div class="field">
-    <%= f.label :plan_talento_humano %><br>
-    <%= f.text_field :plan_talento_humano %>
-  </div>
-  <div class="field">
-    <%= f.label :contraparte_beneficio %><br>
-    <%= f.text_field :contraparte_beneficio %>
-  </div>
-  <div class="field">
-    <%= f.label :anexos %><br>
-    <%= f.text_field :anexos %>
-  </div>
-  <div class="actions">
+  <!--<div class="actions">
     <%= f.submit %>
-  </div>
-<% end %>
+  </div>-->
+  
+  <% end %>

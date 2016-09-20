@@ -7,7 +7,9 @@
     <tr>
       <th>Tipo estudio</th>
       <th>Proc tratamiento</th>
-      <th>Proc esteticos</th>
+      <th>Proc esticos</th>
+      <th>Plan analisis</th>
+      <th>Conclucion</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,7 +19,9 @@
       <tr>
         <td><%= metodologium.tipo_estudio %></td>
         <td><%= metodologium.proc_tratamiento %></td>
-        <td><%= metodologium.proc_esteticos %></td>
+        <td><%= metodologium.proc_esticos %></td>
+        <td><%= metodologium.plan_analisis %></td>
+        <td><%= metodologium.conclucion %></td>
         <td><%= link_to 'Show', metodologium %></td>
         <td><%= link_to 'Edit', edit_metodologium_path(metodologium) %></td>
         <td><%= link_to 'Destroy', metodologium, method: :delete, data: { confirm: 'Are you sure?' } %></td>

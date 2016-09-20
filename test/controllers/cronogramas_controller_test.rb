@@ -18,7 +18,7 @@ class CronogramasControllerTest < ActionController::TestCase
 
   test "should create cronograma" do
     assert_difference('Cronograma.count') do
-      post :create, cronograma: { actividad_relevante: @cronograma.actividad_relevante, fecha_final: @cronograma.fecha_final, fecha_inicial: @cronograma.fecha_inicial, numero: @cronograma.numero }
+      post :create, cronograma: { activi_relevante: @cronograma.activi_relevante, fecha_fin: @cronograma.fecha_fin, fecha_inicio: @cronograma.fecha_inicio, numero: @cronograma.numero, planVinculo_docente: @cronograma.planVinculo_docente, plan_talentoHumano: @cronograma.plan_talentoHumano }
     end
 
     assert_redirected_to cronograma_path(assigns(:cronograma))
@@ -35,7 +35,7 @@ class CronogramasControllerTest < ActionController::TestCase
   end
 
   test "should update cronograma" do
-    patch :update, id: @cronograma, cronograma: { actividad_relevante: @cronograma.actividad_relevante, fecha_final: @cronograma.fecha_final, fecha_inicial: @cronograma.fecha_inicial, numero: @cronograma.numero }
+    patch :update, id: @cronograma, cronograma: { activi_relevante: @cronograma.activi_relevante, fecha_fin: @cronograma.fecha_fin, fecha_inicio: @cronograma.fecha_inicio, numero: @cronograma.numero, planVinculo_docente: @cronograma.planVinculo_docente, plan_talentoHumano: @cronograma.plan_talentoHumano }
     assert_redirected_to cronograma_path(assigns(:cronograma))
   end
 

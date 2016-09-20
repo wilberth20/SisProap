@@ -18,7 +18,7 @@ class PresupuestosControllerTest < ActionController::TestCase
 
   test "should create presupuesto" do
     assert_difference('Presupuesto.count') do
-      post :create, presupuesto: { cantidad: @presupuesto.cantidad, costo_global: @presupuesto.costo_global, costo_total: @presupuesto.costo_total, costo_unitario: @presupuesto.costo_unitario, descripcion: @presupuesto.descripcion, item: @presupuesto.item, unidad: @presupuesto.unidad }
+      post :create, presupuesto: { anexos: @presupuesto.anexos, cantidad: @presupuesto.cantidad, costo_global: @presupuesto.costo_global, costo_total: @presupuesto.costo_total, costo_unit: @presupuesto.costo_unit, descripcion: @presupuesto.descripcion, item: @presupuesto.item, unidad: @presupuesto.unidad }
     end
 
     assert_redirected_to presupuesto_path(assigns(:presupuesto))
@@ -35,7 +35,7 @@ class PresupuestosControllerTest < ActionController::TestCase
   end
 
   test "should update presupuesto" do
-    patch :update, id: @presupuesto, presupuesto: { cantidad: @presupuesto.cantidad, costo_global: @presupuesto.costo_global, costo_total: @presupuesto.costo_total, costo_unitario: @presupuesto.costo_unitario, descripcion: @presupuesto.descripcion, item: @presupuesto.item, unidad: @presupuesto.unidad }
+    patch :update, id: @presupuesto, presupuesto: { anexos: @presupuesto.anexos, cantidad: @presupuesto.cantidad, costo_global: @presupuesto.costo_global, costo_total: @presupuesto.costo_total, costo_unit: @presupuesto.costo_unit, descripcion: @presupuesto.descripcion, item: @presupuesto.item, unidad: @presupuesto.unidad }
     assert_redirected_to presupuesto_path(assigns(:presupuesto))
   end
 

@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :presupuestos
+  resources :presupuestos
+  resources :participaciones_acts
+  resources :cronogramas
+  resources :metodologia
   devise_for :users
   
   post 'signnup' => 'devise/registrations#create', :as => :custom_user_registration

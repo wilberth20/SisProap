@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Numero:</strong>
+  <%= @participaciones_act.numero %>
+</p>
+
+<p>
+  <strong>Nombre act:</strong>
+  <%= @participaciones_act.nombre_act %>
+</p>
+
+<p>
+  <strong>Tipo act:</strong>
+  <%= @participaciones_act.tipo_act %>
+</p>
+
+<p>
+  <strong>Inst nac internac:</strong>
+  <%= @participaciones_act.inst_nac_internac %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @participaciones_act.fecha %>
+</p>
+
+<p>
+  <strong>Tipo planif:</strong>
+  <%= @participaciones_act.tipo_planif %>
+</p>
+
+<p>
+  <strong>Contraparte beneficio:</strong>
+  <%= @participaciones_act.contraparte_beneficio %>
+</p>
+
+<%= link_to 'Edit', edit_participaciones_act_path(@participaciones_act) %> |
+<%= link_to 'Back', participaciones_acts_path %>

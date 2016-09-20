@@ -1,10 +1,10 @@
-<%= form_for(@participacines_act) do |f| %>
-  <% if @participacines_act.errors.any? %>
+<%= form_for(@participaciones_act) do |f| %>
+  <% if @participaciones_act.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@participacines_act.errors.count, "error") %> prohibited this participacines_act from being saved:</h2>
+      <h2><%= pluralize(@participaciones_act.errors.count, "error") %> prohibited this participaciones_act from being saved:</h2>
 
       <ul>
-      <% @participacines_act.errors.full_messages.each do |message| %>
+      <% @participaciones_act.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -24,18 +24,22 @@
     <%= f.text_field :tipo_act %>
   </div>
   <div class="field">
-    <%= f.label :inst_naci_internaci %><br>
-    <%= f.text_field :inst_naci_internaci %>
+    <%= f.label :inst_nac_internac %><br>
+    <%= f.text_field :inst_nac_internac %>
   </div>
   <div class="field">
     <%= f.label :fecha %><br>
     <%= f.date_select :fecha %>
   </div>
   <div class="field">
-    <%= f.label :tipo_planific_planificada %><br>
-    <%= f.text_field :tipo_planific_planificada %>
+    <%= f.label :tipo_planif %><br>
+    <%= f.text_field :tipo_planif %>
+  </div>
+  <div class="field">
+    <%= f.label :contraparte_beneficio %><br>
+    <%= f.text_field :contraparte_beneficio %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <!--<%= f.submit %>-->
   </div>
 <% end %>

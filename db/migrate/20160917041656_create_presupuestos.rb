@@ -5,9 +5,10 @@ class CreatePresupuestos < ActiveRecord::Migration
       t.string :descripcion
       t.string :unidad
       t.integer :cantidad
-      t.money :costo_unitario
+      t.money :costo_unit
       t.money :costo_total
       t.money :costo_global
+      t.string :anexos
 
       t.timestamps null: false
     end

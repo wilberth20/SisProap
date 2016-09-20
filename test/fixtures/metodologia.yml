@@ -3,9 +3,13 @@
 one:
   tipo_estudio: MyString
   proc_tratamiento: MyString
-  proc_esteticos: MyString
+  proc_esticos: MyString
+  plan_analisis: MyString
+  conclucion: MyString
 
 two:
   tipo_estudio: MyString
   proc_tratamiento: MyString
-  proc_esteticos: MyString
+  proc_esticos: MyString
+  plan_analisis: MyString
+  conclucion: MyString

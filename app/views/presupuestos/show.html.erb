@@ -21,8 +21,8 @@
 </p>
 
 <p>
-  <strong>Costo unitario:</strong>
-  <%= @presupuesto.costo_unitario %>
+  <strong>Costo unit:</strong>
+  <%= @presupuesto.costo_unit %>
 </p>
 
 <p>
@@ -33,6 +33,11 @@
 <p>
   <strong>Costo global:</strong>
   <%= @presupuesto.costo_global %>
+</p>
+
+<p>
+  <strong>Anexos:</strong>
+  <%= @presupuesto.anexos %>
 </p>
 
 <%= link_to 'Edit', edit_presupuesto_path(@presupuesto) %> |

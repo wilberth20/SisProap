@@ -9,9 +9,10 @@
       <th>Descripcion</th>
       <th>Unidad</th>
       <th>Cantidad</th>
-      <th>Costo unitario</th>
+      <th>Costo unit</th>
       <th>Costo total</th>
       <th>Costo global</th>
+      <th>Anexos</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -23,9 +24,10 @@
         <td><%= presupuesto.descripcion %></td>
         <td><%= presupuesto.unidad %></td>
         <td><%= presupuesto.cantidad %></td>
-        <td><%= presupuesto.costo_unitario %></td>
+        <td><%= presupuesto.costo_unit %></td>
         <td><%= presupuesto.costo_total %></td>
         <td><%= presupuesto.costo_global %></td>
+        <td><%= presupuesto.anexos %></td>
         <td><%= link_to 'Show', presupuesto %></td>
         <td><%= link_to 'Edit', edit_presupuesto_path(presupuesto) %></td>
         <td><%= link_to 'Destroy', presupuesto, method: :delete, data: { confirm: 'Are you sure?' } %></td>

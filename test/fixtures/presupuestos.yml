@@ -5,15 +5,17 @@ one:
   descripcion: MyString
   unidad: MyString
   cantidad: 1
-  costo_unitario: 
+  costo_unit: 
   costo_total: 
   costo_global: 
+  anexos: MyString
 
 two:
   item: 1
   descripcion: MyString
   unidad: MyString
   cantidad: 1
-  costo_unitario: 
+  costo_unit: 
   costo_total: 
   costo_global: 
+  anexos: MyString

@@ -69,6 +69,6 @@ class CronogramasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cronograma_params
-      params.require(:cronograma).permit(:numero, :actividad_relevante, :fecha_inicial, :fecha_final)
+      params.require(:cronograma).permit(:numero, :activi_relevante, :fecha_inicio, :fecha_fin, :planVinculo_docente, :plan_talentoHumano)
     end
 end

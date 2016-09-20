@@ -18,7 +18,7 @@ class MetodologiaControllerTest < ActionController::TestCase
 
   test "should create metodologium" do
     assert_difference('Metodologium.count') do
-      post :create, metodologium: { proc_esteticos: @metodologium.proc_esteticos, proc_tratamiento: @metodologium.proc_tratamiento, tipo_estudio: @metodologium.tipo_estudio }
+      post :create, metodologium: { conclucion: @metodologium.conclucion, plan_analisis: @metodologium.plan_analisis, proc_esticos: @metodologium.proc_esticos, proc_tratamiento: @metodologium.proc_tratamiento, tipo_estudio: @metodologium.tipo_estudio }
     end
 
     assert_redirected_to metodologium_path(assigns(:metodologium))
@@ -35,7 +35,7 @@ class MetodologiaControllerTest < ActionController::TestCase
   end
 
   test "should update metodologium" do
-    patch :update, id: @metodologium, metodologium: { proc_esteticos: @metodologium.proc_esteticos, proc_tratamiento: @metodologium.proc_tratamiento, tipo_estudio: @metodologium.tipo_estudio }
+    patch :update, id: @metodologium, metodologium: { conclucion: @metodologium.conclucion, plan_analisis: @metodologium.plan_analisis, proc_esticos: @metodologium.proc_esticos, proc_tratamiento: @metodologium.proc_tratamiento, tipo_estudio: @metodologium.tipo_estudio }
     assert_redirected_to metodologium_path(assigns(:metodologium))
   end
 

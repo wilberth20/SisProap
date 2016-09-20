@@ -6,9 +6,11 @@
   <thead>
     <tr>
       <th>Numero</th>
-      <th>Actividad relevante</th>
-      <th>Fecha inicial</th>
-      <th>Fecha final</th>
+      <th>Activi relevante</th>
+      <th>Fecha inicio</th>
+      <th>Fecha fin</th>
+      <th>Planvinculo docente</th>
+      <th>Plan talentohumano</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,9 +19,11 @@
     <% @cronogramas.each do |cronograma| %>
       <tr>
         <td><%= cronograma.numero %></td>
-        <td><%= cronograma.actividad_relevante %></td>
-        <td><%= cronograma.fecha_inicial %></td>
-        <td><%= cronograma.fecha_final %></td>
+        <td><%= cronograma.activi_relevante %></td>
+        <td><%= cronograma.fecha_inicio %></td>
+        <td><%= cronograma.fecha_fin %></td>
+        <td><%= cronograma.planVinculo_docente %></td>
+        <td><%= cronograma.plan_talentoHumano %></td>
         <td><%= link_to 'Show', cronograma %></td>
         <td><%= link_to 'Edit', edit_cronograma_path(cronograma) %></td>
         <td><%= link_to 'Destroy', cronograma, method: :delete, data: { confirm: 'Are you sure?' } %></td>

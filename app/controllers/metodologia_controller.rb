@@ -69,6 +69,6 @@ class MetodologiaController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def metodologium_params
-      params.require(:metodologium).permit(:tipo_estudio, :proc_tratamiento, :proc_esteticos)
+      params.require(:metodologium).permit(:tipo_estudio, :proc_tratamiento, :proc_esticos, :plan_analisis, :conclucion)
     end
 end

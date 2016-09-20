@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Participaciones Acts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Numero</th>
+      <th>Nombre act</th>
+      <th>Tipo act</th>
+      <th>Inst nac internac</th>
+      <th>Fecha</th>
+      <th>Tipo planif</th>
+      <th>Contraparte beneficio</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @participaciones_acts.each do |participaciones_act| %>
+      <tr>
+        <td><%= participaciones_act.numero %></td>
+        <td><%= participaciones_act.nombre_act %></td>
+        <td><%= participaciones_act.tipo_act %></td>
+        <td><%= participaciones_act.inst_nac_internac %></td>
+        <td><%= participaciones_act.fecha %></td>
+        <td><%= participaciones_act.tipo_planif %></td>
+        <td><%= participaciones_act.contraparte_beneficio %></td>
+        <td><%= link_to 'Show', participaciones_act %></td>
+        <td><%= link_to 'Edit', edit_participaciones_act_path(participaciones_act) %></td>
+        <td><%= link_to 'Destroy', participaciones_act, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Participaciones act', new_participaciones_act_path %>

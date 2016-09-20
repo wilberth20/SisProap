@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numero: 1
+  nombre_act: MyString
+  tipo_act: MyString
+  inst_nac_internac: MyString
+  fecha: 2016-09-16
+  tipo_planif: MyString
+  contraparte_beneficio: MyString
+
+two:
+  numero: 1
+  nombre_act: MyString
+  tipo_act: MyString
+  inst_nac_internac: MyString
+  fecha: 2016-09-16
+  tipo_planif: MyString
+  contraparte_beneficio: MyString

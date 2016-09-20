@@ -2,12 +2,16 @@
 
 one:
   numero: 1
-  actividad_relevante: MyString
-  fecha_inicial: 2016-08-17
-  fecha_final: 2016-08-17
+  activi_relevante: MyString
+  fecha_inicio: 2016-09-16
+  fecha_fin: 2016-09-16
+  planVinculo_docente: MyString
+  plan_talentoHumano: MyString
 
 two:
   numero: 1
-  actividad_relevante: MyString
-  fecha_inicial: 2016-08-17
-  fecha_final: 2016-08-17
+  activi_relevante: MyString
+  fecha_inicio: 2016-09-16
+  fecha_fin: 2016-09-16
+  planVinculo_docente: MyString
+  plan_talentoHumano: MyString

@@ -1,0 +1,2 @@
+json.extract! participaciones_act, :id, :numero, :nombre_act, :tipo_act, :inst_nac_internac, :fecha, :tipo_planif, :contraparte_beneficio, :created_at, :updated_at
+json.url participaciones_act_url(participaciones_act, format: :json)

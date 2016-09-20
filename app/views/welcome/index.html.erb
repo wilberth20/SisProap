@@ -11,7 +11,7 @@
                 </button>
                 <a class="navbar-brand" style="color: #2a6496;font-size:28px "  > <strong>SIS</strong>
                 </a>
-                <a class="navbar-brand2" style="color: #ecf2f6;font-size:28px "  > <strong>PSP</strong>
+                <a class="navbar-brand" style="color: #ecf2f6;font-size:28px;margin-left:0%"  > <strong>PSP</strong>
                 </a>
             
             </div>
@@ -102,8 +102,6 @@
                     <ul class="dropdown-menu">
                        
 
-                        
-
                 <% if user_signed_in? %>
                         
                   <li>
@@ -138,7 +136,7 @@
                 </li>
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <!--<div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav" style="left: 0px;">
                     <li class="active">
                         <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
@@ -176,21 +174,9 @@
                         <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
                     </li>
                 </ul>
-            </div>
+            </div>-->
             <!-- /.navbar-collapse -->
         </nav>
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- Navigation -->
  <div id="page-wrapper">
@@ -201,25 +187,26 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            <strong>SISPSP</strong> <small>Sistema de Planeación y Seguimiento a Proyecto</small>
+                        <strong>Sistema de Planeación y Seguimiento a Proyecto<strong>
                         </h1>
+                 <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert alert-info alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            <i class="fa fa-commenting"></i>  <strong>Bienvenido</strong>
+                        </div>
+                    </div>
+                </div>
                         <ol class="breadcrumb">
                             <li class="active">
-                                <i class="fa fa-building-o"></i> Bienvenido
+                                <i class="fa fa-building-o"></i> Menú
                             </li>
                         </ol>
                     </div>
                 </div>
                 <!-- /.row -->
 
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="alert alert-info alert-dismissable">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                            <i class="fa fa-commenting"></i>  <strong>Te gusta?</strong> Yeah <a href="http://startbootstrap.com/template-overviews/sb-admin-2" class="alert-link">:*</a> Vamos!
-                        </div>
-                    </div>
-                </div>
+
                 <!-- /.row -->
 
                 <div class="row">
@@ -237,8 +224,9 @@
                                 </div>
                             </div>
                             <a href="#">
-                                <div class="panel-footer">
-                                    <span class="pull-left">Ver</span>
+                                <div class="panel-footer"> 
+                                <span><%= link_to "Registrar Nuevo Proyecto", :controller => "datos_personales", :action => "new"%></span> 
+                                   <span class="pull-left"></span> 
                                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                     <div class="clearfix"></div>
                                 </div>
@@ -298,7 +286,7 @@
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <div class="huge">12</div>
-                                        <div>Ver Cronograma de Trabajo</div>
+                                        <div>Ver Cronograma</div>
                                     </div>
                                 </div>
                             </div>

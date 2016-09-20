@@ -24,14 +24,13 @@ class DatosPersonalesController < ApplicationController
   # POST /datos_personales
   # POST /datos_personales.json
   def create
-    @datos_personale = DatosPersonale.new(datos_personale_params)
-
+  @datos_personale = DatosPersonale.new(datos_personale_params)
     respond_to do |format|
       if @datos_personale.save
         format.html { redirect_to @datos_personale, notice: 'Datos personale was successfully created.' }
         format.json { render :show, status: :created, location: @datos_personale }
       else
-        format.html { render :new }
+       format.html { render :new }
         format.json { render json: @datos_personale.errors, status: :unprocessable_entity }
       end
     end

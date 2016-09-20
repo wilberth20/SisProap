@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160826173538) do
+ActiveRecord::Schema.define(version: 20160917041656) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,9 +38,11 @@ ActiveRecord::Schema.define(version: 20160826173538) do
 
   create_table "cronogramas", force: :cascade do |t|
     t.integer  "numero"
-    t.string   "actividad_relevante"
-    t.date     "fecha_inicial"
-    t.date     "fecha_final"
+    t.string   "activi_relevante"
+    t.date     "fecha_inicio"
+    t.date     "fecha_fin"
+    t.string   "planVinculo_docente"
+    t.string   "plan_talentoHumano"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
   end
@@ -99,20 +101,16 @@ ActiveRecord::Schema.define(version: 20160826173538) do
     t.string   "definicion_problema"
     t.string   "justificacio"
     t.string   "fundamento_teorico"
-    t.string   "plan_analisis"
-    t.string   "conclucion"
-    t.string   "plan_vinculo_docente"
-    t.string   "plan_talento_humano"
-    t.string   "contraparte_beneficio"
-    t.string   "anexos"
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
   end
 
   create_table "metodologia", force: :cascade do |t|
     t.string   "tipo_estudio"
     t.string   "proc_tratamiento"
-    t.string   "proc_esteticos"
+    t.string   "proc_esticos"
+    t.string   "plan_analisis"
+    t.string   "conclucion"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
   end
@@ -165,15 +163,16 @@ ActiveRecord::Schema.define(version: 20160826173538) do
     t.datetime "updated_at",          null: false
   end
 
-  create_table "participacines_acts", force: :cascade do |t|
+  create_table "participaciones_acts", force: :cascade do |t|
     t.integer  "numero"
     t.string   "nombre_act"
     t.string   "tipo_act"
-    t.string   "inst_naci_internaci"
+    t.string   "inst_nac_internac"
     t.date     "fecha"
-    t.string   "tipo_planific_planificada"
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.string   "tipo_planif"
+    t.string   "contraparte_beneficio"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
 
   create_table "participantes_proyecto_avances", force: :cascade do |t|
@@ -194,11 +193,12 @@ ActiveRecord::Schema.define(version: 20160826173538) do
     t.string   "descripcion"
     t.string   "unidad"
     t.integer  "cantidad"
-    t.money    "costo_unitario", scale: 2
-    t.money    "costo_total",    scale: 2
-    t.money    "costo_global",   scale: 2
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.money    "costo_unit",   scale: 2
+    t.money    "costo_total",  scale: 2
+    t.money    "costo_global", scale: 2
+    t.string   "anexos"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   create_table "publicacion_esperadas", force: :cascade do |t|
