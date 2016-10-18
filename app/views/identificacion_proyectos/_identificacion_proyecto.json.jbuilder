@@ -1,2 +1,2 @@
-json.extract! identificacion_proyecto, :id, :titulo, :fecha_inicio, :fecha_fin, :duracion, :area_estrategica, :linea, :resumen, :definicion_problema, :justificacio, :fundamento_teorico, :plan_analisis, :conclucion, :plan_vinculo_docente, :plan_talento_humano, :contraparte_beneficio, :anexos, :created_at, :updated_at
+json.extract! identificacion_proyecto, :id, :titulo, :fecha_inicio, :fecha_fin, :duracion, :area_estrategica, :linea, :resumen, :definicion_problema, :justificacio, :fundamento_teorico, :plan_analisis, :conclucion, :plan_vinculo_docente, :plan_talento_humano, :contraparte_beneficio, :anexos, :datos_personale_id, :created_at, :updated_at
 json.url identificacion_proyecto_url(identificacion_proyecto, format: :json)

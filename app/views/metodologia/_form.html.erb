@@ -10,28 +10,32 @@
       </ul>
     </div>
   <% end %>
-
+  <div class="Container1">
+<div class="Container">
   <div class="field">
     <%= f.label :tipo_estudio %><br>
-    <%= f.text_field :tipo_estudio %>
+    <%= f.text_field :tipo_estudio , class: "form-control", placeholder: "Tipo de estudio a realizar"%>
   </div>
   <div class="field">
     <%= f.label :proc_tratamiento %><br>
-    <%= f.text_field :proc_tratamiento %>
+    <%= f.text_field :proc_tratamiento, class: "form-control", placeholder: "Tratamiento" %>
   </div>
   <div class="field">
     <%= f.label :proc_esticos %><br>
-    <%= f.text_field :proc_esticos %>
+    <%= f.text_field :proc_esticos , class: "form-control", placeholder: "Procedimientos Esteticos"%>
   </div>
   <div class="field">
     <%= f.label :plan_analisis %><br>
-    <%= f.text_field :plan_analisis %>
+    <%= f.text_field :plan_analisis , class: "form-control", placeholder: "Plan de Analisis"%>
   </div>
   <div class="field">
     <%= f.label :conclucion %><br>
-    <%= f.text_field :conclucion %>
+    <%= f.text_field :conclucion , class: "form-control", placeholder: "Concluciones"%>
   </div>
   <div class="actions">
-    <!--<%= f.submit %>-->
+    <button type="submit" class="btn btn-primary">Siguiente</button>
   </div>
-<% end %>
+  </div>
+  </div>
+<% end %>  
+ 

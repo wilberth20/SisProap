@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :presupuestos
+  resources :identificacion_proyectos
+  resources :identificacion_proyectos
   resources :presupuestos
   resources :participaciones_acts
   resources :cronogramas
@@ -18,8 +19,6 @@ Rails.application.routes.draw do
   resources :participantes_proyecto_avances
   resources :datos_generales_avances
   resources :participacines_acts
-  resources :presupuestos
-  resources :presupuestos
   resources :presupuestos
   resources :cronogramas
   resources :publicacion_esperadas

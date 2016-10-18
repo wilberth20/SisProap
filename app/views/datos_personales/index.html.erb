@@ -34,9 +34,9 @@
         <td><%= datos_personale.formacion_academica %></td>
         <td><%= datos_personale.experiencia %></td>
         <td><%= datos_personale.curriculum %></td>
-        <td><%= link_to 'Show', datos_personale %></td>
-        <td><%= link_to 'Edit', edit_datos_personale_path(datos_personale) %></td>
-        <td><%= link_to 'Destroy', datos_personale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', datos_personale %></td>
+        <td><%= link_to 'Editar', edit_datos_personale_path(datos_personale) %></td>
+        <td><%= link_to 'Eliminar', datos_personale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

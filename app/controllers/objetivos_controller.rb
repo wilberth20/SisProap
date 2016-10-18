@@ -28,7 +28,7 @@ class ObjetivosController < ApplicationController
 
     respond_to do |format|
       if @objetivo.save
-        format.html { redirect_to @objetivo, notice: 'Objetivo was successfully created.' }
+        format.html { redirect_to new_metodologium_path }
         format.json { render :show, status: :created, location: @objetivo }
       else
         format.html { render :new }

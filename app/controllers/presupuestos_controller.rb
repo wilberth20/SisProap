@@ -28,7 +28,7 @@ class PresupuestosController < ApplicationController
 
     respond_to do |format|
       if @presupuesto.save
-        format.html { redirect_to @presupuesto, notice: 'Presupuesto was successfully created.' }
+        format.html { redirect_to identificacion_proyectos_path}
         format.json { render :show, status: :created, location: @presupuesto }
       else
         format.html { render :new }

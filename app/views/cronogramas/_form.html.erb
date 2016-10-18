@@ -1,41 +1,41 @@
-<%= form_for(@cronograma) do |f| %>
-  <% if @cronograma.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@cronograma.errors.count, "error") %> prohibited this cronograma from being saved:</h2>
+  <%= form_for(@cronograma) do |f| %>
+    <% if @cronograma.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@cronograma.errors.count, "error") %> prohibited this cronograma from being saved:</h2>
 
-      <ul>
-      <% @cronograma.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+        <ul>
+        <% @cronograma.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field col-md-4">
+      <%= f.label :numero %><br>
+      <%= f.number_field :numero, class: "form-control" %>
+    </div>
+    <div class="field col-md-4">
+      <%= f.label :activi_relevante %><br>
+      <%= f.text_field :activi_relevante, class: "form-control", style: "width 30%;" %>
+    </div>
+    <div class="field col-md-5">
+      <%= f.label :fecha_inicio %><br>
+      <%= f.date_select :fecha_inicio %>
+    </div>
+    <div class="field col-md-6">
+      <%= f.label :fecha_fin %><br>
+      <%= f.date_select :fecha_fin, class: "form-control" %>
+    </div>
+    <div class="field col-md-4">
+      <%= f.label :planVinculo_docente %><br>
+      <%= f.text_field :planVinculo_docente, class: "form-control" %>
+    </div>
+    <div class="field col-md-4">
+      <%= f.label :plan_talentoHumano %><br>
+      <%= f.text_field :plan_talentoHumano, class: "form-control" %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Nueva Tarea "%>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :numero %><br>
-    <%= f.number_field :numero %>
-  </div>
-  <div class="field" style="margin-left: 200px; margin-top: -61px">
-    <%= f.label :activi_relevante %><br>
-    <%= f.text_field :activi_relevante %>
-  </div>
-  <div class="field" style="margin-left: 400px; margin-top: -61px">
-    <%= f.label :fecha_inicio %><br>
-    <%= f.date_select :fecha_inicio %>
-  </div>
-  <div class="field" style="margin-left: 620px; margin-top: -55px">
-    <%= f.label :fecha_fin %><br>
-    <%= f.date_select :fecha_fin %>
-  </div>
-  <div class="field" style="margin-top: 60px">
-    <%= f.label :planVinculo_docente %><br>
-    <%= f.text_field :planVinculo_docente %>
-  </div>
-  <div class="field" style="margin-left: 200px; margin-top: -61px">
-    <%= f.label :plan_talentoHumano %><br>
-    <%= f.text_field :plan_talentoHumano %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>

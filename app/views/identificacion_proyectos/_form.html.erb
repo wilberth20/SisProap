@@ -1,4 +1,3 @@
-
 <%= form_for(@identificacion_proyecto) do |f| %>
   <% if @identificacion_proyecto.errors.any? %>
     <div id="error_explanation">
@@ -11,50 +10,79 @@
       </ul>
     </div>
   <% end %>
-
-
-  <div class="field" style="margin-left: 50px">
+  <div class="Container1">
+<div class="Container">
+  <div class="field">
     <%= f.label :titulo %><br>
-    <%= f.text_field :titulo %>
+    <%= f.text_field :titulo , class: "form-control", placeholder: "Ingrese el titulo del proyecto"%> 
   </div>
-  <div class="field" style="margin-left: 290px; margin-top:-61px; margin-right: 250px">
+  <div class="field">
     <%= f.label :fecha_inicio %><br>
-    <%= f.date_select :fecha_inicio %>
+    <%= f.date_select :fecha_inicio , class: "form-control"%>
   </div>
-  <div class="field" style="margin-left: 550px;margin-top: -55px; margin-right: 0px">
+  <div class="field">
     <%= f.label :fecha_fin %><br>
-    <%= f.date_select :fecha_fin %>
+    <%= f.date_select :fecha_fin , class: "form-control"%>
   </div>
-  <div class="field" style="margin-left: 50px">
+  <div class="field">
     <%= f.label :duracion %><br>
-    <%= f.number_field :duracion %>
+    <%= f.number_field :duracion , class: "form-control", placeholder: "Duracion del Proyecto"%>
   </div>
-  <div class="field" style="margin-left: 290px; margin-top: -61px">
+  <div class="field">
     <%= f.label :area_estrategica %><br>
-    <%= f.text_field :area_estrategica %>
+    <%= f.text_field :area_estrategica , class: "form-control", placeholder: "Ingrese el area de trabajo"%>
   </div>
-  <div class="field" style="margin-left: 550px;margin-top: -61px">
+  <div class="field">
     <%= f.label :linea %><br>
-    <%= f.text_field :linea %>
+    <%= f.text_field :linea , class: "form-control", placeholder: "Linea de trabajo"%>
   </div>
-  <div class="field" style="margin-left: 50px">
+  <div class="field">
     <%= f.label :resumen %><br>
-    <%= f.text_field :resumen %>
+    <%= f.text_area :resumen , class: "form-control", placeholder: "Resumen del Proyecto"%>
   </div>
-  <div class="field" style="margin-left: 290px; margin-top: -61px">
+  <div class="field">
     <%= f.label :definicion_problema %><br>
-    <%= f.text_field :definicion_problema %>
+    <%= f.text_field :definicion_problema , class: "form-control", placeholder: "Defina el Problema"%>
   </div>
-  <div class="field" style="margin-left: 550px;margin-top: -61px">
+  <div class="field">
     <%= f.label :justificacio %><br>
-    <%= f.text_field :justificacio %>
+    <%= f.text_area :justificacio , class: "form-control", placeholder: "Justifique el Problema"%>
   </div>
-  <div class="field" style="margin-left: 50px;">
+  <div class="field">
     <%= f.label :fundamento_teorico %><br>
-    <%= f.text_field :fundamento_teorico %>
+    <%= f.text_field :fundamento_teorico , class: "form-control", placeholder: "Fundamento Teorico"%>
   </div>
-  <!--<div class="actions">
-    <%= f.submit %>
-  </div>-->
-  
-  <% end %>
+  <div class="field">
+    <%= f.label :plan_analisis %><br>
+    <%= f.text_field :plan_analisis , class: "form-control", placeholder: "Plan de Analisis"%>
+  </div>
+  <div class="field">
+    <%= f.label :conclusión %><br>
+    <%= f.text_area :conclucion , class: "form-control", placeholder: "Conclusión"%>
+  </div>
+  <div class="field">
+    <%= f.label :plan_vinculo_docente %><br>
+    <%= f.text_field :plan_vinculo_docente , class: "form-control", placeholder: "Plan Vinculo Docente"%>
+  </div>
+  <div class="field">
+    <%= f.label :plan_talento_humano %><br>
+    <%= f.text_field :plan_talento_humano , class: "form-control", placeholder: "Plan Talento Humano"%>
+  </div>
+  <div class="field">
+    <%= f.label :contraparte_beneficio %><br>
+    <%= f.text_field :contraparte_beneficio , class: "form-control", placeholder: "Contra Parte Beneficio"%>
+  </div>
+  <div class="field">
+    <%= f.label :anexos %><br>
+    <%= f.text_field :anexos , class: "form-control", placeholder: "Anexos"%>
+  </div>
+  <div class="field" , :display:none >
+    <%= f.label :datos_personale_id %><br>
+    <%= f.text_field :datos_personale_id , class: "form-control", placeholder: "N"%>
+  </div>
+  <div class="actions">
+    <button type="submit" class="btn btn-primary">Siguiente</button>
+  </div>
+  </div>
+  </div>
+<% end %>

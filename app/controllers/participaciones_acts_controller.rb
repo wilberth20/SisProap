@@ -28,7 +28,7 @@ class ParticipacionesActsController < ApplicationController
 
     respond_to do |format|
       if @participaciones_act.save
-        format.html { redirect_to @participaciones_act, notice: 'Participaciones act was successfully created.' }
+        format.html { redirect_to new_presupuesto_path }
         format.json { render :show, status: :created, location: @participaciones_act }
       else
         format.html { render :new }

@@ -10,16 +10,19 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+  <div class="Container1">
+<div class="Container">
+  <div class="field" >
     <%= f.label :objetivo_general %><br>
-    <%= f.text_field :objetivo_general %>
+    <%= f.text_area :objetivo_general , class: "form-control", placeholder: "Ingrese el Objetivo General"%>
   </div>
   <div class="field">
     <%= f.label :objetivo_especifico %><br>
-    <%= f.text_field :objetivo_especifico %>
+    <%= f.text_area :objetivo_especifico,  class: "form-control", placeholder: "Ingrese lo Objetivo Específicos"%>
   </div>
   <div class="actions">
-    <!--<%= f.submit %>-->
+    <button type="submit" class="btn btn-primary">Siguiente</button>
+  </div> 
+  </div>
   </div>
 <% end %>

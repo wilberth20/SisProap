@@ -5,6 +5,7 @@ class IdentificacionProyectosController < ApplicationController
   # GET /identificacion_proyectos.json
   def index
     @identificacion_proyectos = IdentificacionProyecto.all
+    @tuma = IdentificacionProyecto.all
   end
 
   # GET /identificacion_proyectos/1
@@ -28,7 +29,7 @@ class IdentificacionProyectosController < ApplicationController
 
     respond_to do |format|
       if @identificacion_proyecto.save
-        format.html { redirect_to @identificacion_proyecto, notice: 'Identificacion proyecto was successfully created.' }
+        format.html { redirect_to new_objetivo_path  }
         format.json { render :show, status: :created, location: @identificacion_proyecto }
       else
         format.html { render :new }
@@ -69,6 +70,6 @@ class IdentificacionProyectosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def identificacion_proyecto_params
-      params.require(:identificacion_proyecto).permit(:titulo, :fecha_inicio, :fecha_fin, :duracion, :area_estrategica, :linea, :resumen, :definicion_problema, :justificacio, :fundamento_teorico, :plan_analisis, :conclucion, :plan_vinculo_docente, :plan_talento_humano, :contraparte_beneficio, :anexos)
+      params.require(:identificacion_proyecto).permit(:titulo, :fecha_inicio, :fecha_fin, :duracion, :area_estrategica, :linea, :resumen, :definicion_problema, :justificacio, :fundamento_teorico, :plan_analisis, :conclucion, :plan_vinculo_docente, :plan_talento_humano, :contraparte_beneficio, :anexos, :datos_personale_id)
     end
 end

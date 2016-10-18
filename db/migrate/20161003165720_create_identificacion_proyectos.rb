@@ -17,6 +17,7 @@ class CreateIdentificacionProyectos < ActiveRecord::Migration
       t.string :plan_talento_humano
       t.string :contraparte_beneficio
       t.string :anexos
+      t.references :datos_personale, index: true, foreign_key: true
 
       t.timestamps null: false
     end

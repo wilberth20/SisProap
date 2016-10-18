@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160917041656) do
+ActiveRecord::Schema.define(version: 20161003165720) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -101,9 +101,18 @@ ActiveRecord::Schema.define(version: 20160917041656) do
     t.string   "definicion_problema"
     t.string   "justificacio"
     t.string   "fundamento_teorico"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
+    t.string   "plan_analisis"
+    t.string   "conclucion"
+    t.string   "plan_vinculo_docente"
+    t.string   "plan_talento_humano"
+    t.string   "contraparte_beneficio"
+    t.string   "anexos"
+    t.integer  "datos_personale_id"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
+
+  add_index "identificacion_proyectos", ["datos_personale_id"], name: "index_identificacion_proyectos_on_datos_personale_id", using: :btree
 
   create_table "metodologia", force: :cascade do |t|
     t.string   "tipo_estudio"
@@ -237,4 +246,5 @@ ActiveRecord::Schema.define(version: 20160917041656) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  add_foreign_key "identificacion_proyectos", "datos_personales"
 end

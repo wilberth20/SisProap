@@ -28,7 +28,7 @@ class CronogramasController < ApplicationController
 
     respond_to do |format|
       if @cronograma.save
-        format.html { redirect_to @cronograma, notice: 'Cronograma was successfully created.' }
+        format.html { redirect_to @datos_generales_avance, notice:"esto se descontrolo"}
         format.json { render :show, status: :created, location: @cronograma }
       else
         format.html { render :new }

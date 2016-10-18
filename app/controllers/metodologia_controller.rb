@@ -28,7 +28,7 @@ class MetodologiaController < ApplicationController
 
     respond_to do |format|
       if @metodologium.save
-        format.html { redirect_to @metodologium, notice: 'Metodologium was successfully created.' }
+        format.html { redirect_to new_publicacion_esperada_path }
         format.json { render :show, status: :created, location: @metodologium }
       else
         format.html { render :new }

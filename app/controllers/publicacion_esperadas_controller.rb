@@ -28,7 +28,7 @@ class PublicacionEsperadasController < ApplicationController
 
     respond_to do |format|
       if @publicacion_esperada.save
-        format.html { redirect_to @publicacion_esperada, notice: 'Publicacion esperada was successfully created.' }
+        format.html { redirect_to new_cronograma_path}
         format.json { render :show, status: :created, location: @publicacion_esperada }
       else
         format.html { render :new }

@@ -2,8 +2,8 @@
 
 one:
   titulo: MyString
-  fecha_inicio: 2016-08-17
-  fecha_fin: 2016-08-17
+  fecha_inicio: 2016-10-03
+  fecha_fin: 2016-10-03
   duracion: 1
   area_estrategica: MyString
   linea: MyString
@@ -17,11 +17,12 @@ one:
   plan_talento_humano: MyString
   contraparte_beneficio: MyString
   anexos: MyString
+  datos_personale_id: 
 
 two:
   titulo: MyString
-  fecha_inicio: 2016-08-17
-  fecha_fin: 2016-08-17
+  fecha_inicio: 2016-10-03
+  fecha_fin: 2016-10-03
   duracion: 1
   area_estrategica: MyString
   linea: MyString
@@ -35,3 +36,4 @@ two:
   plan_talento_humano: MyString
   contraparte_beneficio: MyString
   anexos: MyString
+  datos_personale_id: 

@@ -10,53 +10,50 @@
       </ul>
     </div>
   <% end %>
+  <div class="Container1">
 <div class="Container">
   <div class="field">
     <%= f.label :nombre %><br>
-    <%= f.text_field :nombre %>
+    <%= f.text_field :nombre , class: "form-control", placeholder: "Nombre"%>
   </div>
   <div class="field">
-    <%= f.label :apellido %><br>
-    <%= f.text_field :apellido %>
+    <%= f.label :Apellido %><br>
+    <%= f.text_field :apellido, class: "form-control", placeholder: "Apellido"%>
   </div>
   <div class="field">
-    <%= f.label :facultad %><br>
-    <%= f.text_field :facultad %>
+    <%= f.label :Facultad %><br>
+   <%= f.text_field :facultad, class: "form-control", placeholder: "Facultad"%>
   </div>
   <div class="field">
-    <%= f.label :departamento %><br>
-    <%= f.text_field :departamento %>
+    <%= f.label :Departamento %><br>
+    <%= f.text_field :departamento, class: "form-control", placeholder: "Departamento"%>
   </div>
   <div class="field">
-    <%= f.label :programa %><br>
-    <%= f.text_field :programa %>
+    <%= f.label :Programa %><br>
+    <%= f.text_field :programa, class: "form-control", placeholder: "Programa"%>
+  <div class="field">
+    <%= f.label :Teléfono %><br>
+    <%= f.text_field :telefono, class: "form-control", placeholder: "Telefono"%>
+  <div class="field">
+    <%= f.label :Celular %><br>
+    <%= f.text_field :celular, class: "form-control", placeholder: "Ingrese un numero de Celular"%>
+  <div class="field">
+    <%= f.label :Email %><br>
+    <%= f.text_field :email, class: "form-control", placeholder: "Ingrese su Email"%>
+  <div class="field">
+    <%= f.label :Formacion_Académica %><br>
+    <%= f.text_area :formacion_academica, class: "form-control", placeholder: "Ingrese sus datos academicos"%>
+  <div class="field">
+    <%= f.label :Experiencia %><br>
+    <%= f.text_field :experiencia, class: "form-control", placeholder: "Experiancia como Investigado/Innovador"%>
   </div>
   <div class="field">
-    <%= f.label :telefono %><br>
-    <%= f.number_field :telefono %>
-  </div>
-  <div class="field">
-    <%= f.label :celular %><br>
-    <%= f.number_field :celular %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :formacion_academica %><br>
-    <%= f.text_field :formacion_academica %>
-  </div>
-  <div class="field">
-    <%= f.label :experiencia %><br>
-    <%= f.text_field :experiencia %>
-  </div>
-  <div class="field">
-    <%= f.label :curriculum %><br>
-    <%= f.text_field :curriculum %>
+    <%= f.label :Curriculum %><br>
+    <%= f.text_field :curriculum, class: "form-control", placeholder: "Curriculum"%>
   </div>
   <div class="actions">
-    <!--<%= f.submit %>-->
+    <button type="submit" class="btn btn-primary">Siguiente</button>
+  </div>
   </div>
   </div>
 <% end %>

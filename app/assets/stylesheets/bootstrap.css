@@ -1402,9 +1402,10 @@ a.bg-danger:focus {
   background-color: #e4b9b9;
 }
 .page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
-  border-bottom: 1px solid #eee;
+  margin: 20px 0px 20px;
+}
+.page-header2 {
+  margin: 0px 320px 0px;
 }
 ul,
 ol {
@@ -1593,7 +1594,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 570px;
   }
 }
 .container-fluid {
@@ -2542,7 +2543,7 @@ output {
 }
 .form-control {
   display: block;
-  width: 100%;
+  width: 35%;
   height: 34px;
   padding: 6px 12px;
   font-size: 14px;
@@ -5711,13 +5712,13 @@ button.list-group-item-danger.active:focus {
   border-color: #5cb85c;
 }
 .panel-otro {
-  border-color: #ca428b;
+  color: #fff;
   background-color: #ca428b;
+  border-color: #ca428b;
 }
 .panel-yellow {
   border-color: #f0ad4e;
 }
-
 .panel-red {
   border-color: #d9534f;
 }

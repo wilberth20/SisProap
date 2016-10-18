@@ -10,24 +10,27 @@
       </ul>
     </div>
   <% end %>
-
+  <div class="Container1">
+<div class="Container">
   <div class="field">
     <%= f.label :titulo_publicacion %><br>
-    <%= f.text_field :titulo_publicacion %>
+    <%= f.text_field :titulo_publicacion , class: "form-control", placeholder: "Ingrese el titulo de la publicación"%>
   </div>
   <div class="field">
     <%= f.label :revista_publicacion %><br>
-    <%= f.text_field :revista_publicacion %>
+    <%= f.text_field :revista_publicacion , class: "form-control", placeholder: "Revista de Publicación"%>
   </div>
   <div class="field">
     <%= f.label :conferencia_sometera %><br>
-    <%= f.text_field :conferencia_sometera %>
+    <%= f.text_field :conferencia_sometera , class: "form-control", placeholder: "Conferencia a la que se someterá"%>
   </div>
   <div class="field">
     <%= f.label :fecha_esperada %><br>
-    <%= f.date_select :fecha_esperada %>
+    <%= f.date_select :fecha_esperada , class: "form-control"%>
   </div>
   <div class="actions">
-   <!-- <%= f.submit %>-->
+  <button type="submit" class="btn btn-primary">Siguiente</button>
+  </div>
+  </div>
   </div>
 <% end %>

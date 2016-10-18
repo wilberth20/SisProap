@@ -15,6 +15,13 @@
       <th>Definicion problema</th>
       <th>Justificacio</th>
       <th>Fundamento teorico</th>
+      <th>Plan analisis</th>
+      <th>Conclucion</th>
+      <th>Plan vinculo docente</th>
+      <th>Plan talento humano</th>
+      <th>Contraparte beneficio</th>
+      <th>Anexos</th>
+      <th>Datos personale</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -32,6 +39,13 @@
         <td><%= identificacion_proyecto.definicion_problema %></td>
         <td><%= identificacion_proyecto.justificacio %></td>
         <td><%= identificacion_proyecto.fundamento_teorico %></td>
+        <td><%= identificacion_proyecto.plan_analisis %></td>
+        <td><%= identificacion_proyecto.conclucion %></td>
+        <td><%= identificacion_proyecto.plan_vinculo_docente %></td>
+        <td><%= identificacion_proyecto.plan_talento_humano %></td>
+        <td><%= identificacion_proyecto.contraparte_beneficio %></td>
+        <td><%= identificacion_proyecto.anexos %></td>
+        <td><%= identificacion_proyecto.datos_personale %></td>
         <td><%= link_to 'Show', identificacion_proyecto %></td>
         <td><%= link_to 'Edit', edit_identificacion_proyecto_path(identificacion_proyecto) %></td>
         <td><%= link_to 'Destroy', identificacion_proyecto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -42,4 +56,4 @@
 
 <br>
 
-<%= link_to 'registrar identificacion del Proyecto', new_identificacion_proyecto_path %>
+<%= link_to 'New Identificacion proyecto', new_identificacion_proyecto_path %>

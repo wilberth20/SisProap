@@ -15,6 +15,9 @@ class DatosPersonalesController < ApplicationController
   # GET /datos_personales/new
   def new
     @datos_personale = DatosPersonale.new
+   # 3.times do
+    #identificacion_proyecto = @datos_personale.identificacion_proyectos.build
+  #end
   end
 
   # GET /datos_personales/1/edit
@@ -26,8 +29,8 @@ class DatosPersonalesController < ApplicationController
   def create
   @datos_personale = DatosPersonale.new(datos_personale_params)
     respond_to do |format|
-      if @datos_personale.save
-        format.html { redirect_to @datos_personale, notice: 'Datos personale was successfully created.' }
+      if @datos_personale.save 
+        format.html { redirect_to new_identificacion_proyecto_path }
         format.json { render :show, status: :created, location: @datos_personale }
       else
        format.html { render :new }
